@@ -1,0 +1,14 @@
+{
+  "name": "Kifkoi",
+  "short_name": "Kifkoi",
+  "description": "Qui fait quoi à la maison ? Les tâches partagées équitablement selon les horaires de chacun.",
+  "lang": "fr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#F1F5F4",
+  "theme_color": "#167C80",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
