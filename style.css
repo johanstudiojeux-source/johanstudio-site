@@ -18,7 +18,7 @@ h2{font-size:1.5rem;margin:56px 0 20px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}
 .card h3{margin:0 0 6px;font-size:1.2rem}
 .card p{margin:0 0 14px;color:var(--muted);font-size:.97rem}
-.tag{display:inline-block;font-size:.8rem;padding:3px 10px;border-radius:99px;border:1px solid var(--accent);color:var(--accent)}
+.tag{display:inline-block;font-size:.8rem;padding:3px 10px;border-radius:99px;border:1px solid var(--accent);color:var(--accent);text-decoration:none}
 .contact{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}
 footer{margin-top:72px;padding:28px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.92rem}
 footer a{color:var(--muted)}
