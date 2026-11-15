@@ -1,7 +1,7 @@
 {
-  "name": "QuiFait",
-  "short_name": "QuiFait",
-  "description": "Partagez équitablement les tâches de la maison selon les disponibilités de chacun.",
+  "name": "Kifkoi",
+  "short_name": "Kifkoi",
+  "description": "Qui fait quoi à la maison ? Les tâches partagées équitablement selon les horaires de chacun.",
   "lang": "fr",
   "start_url": "./",
   "scope": "./",
