@@ -1,0 +1,14 @@
+{
+  "name": "Coup de Main",
+  "short_name": "Coup de Main",
+  "description": "Partagez équitablement les tâches de la maison selon les disponibilités de chacun.",
+  "lang": "fr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#F1F5F4",
+  "theme_color": "#167C80",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
