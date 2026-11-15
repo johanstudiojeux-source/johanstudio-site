@@ -1,23 +1,7 @@
 <!doctype html>
-<html lang="fr">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>QuiFait · Bientôt disponible</title>
-<meta name="description" content="QuiFait, l'appli de partage des tâches en famille, arrive bientôt.">
-<link rel="stylesheet" href="../style.css">
-<style>.soon{max-width:560px;margin:12vh auto 0;text-align:center}.soon h1{font-size:clamp(1.8rem,6vw,2.6rem);margin:0 0 12px}.soon p{color:var(--muted)}.soon .tag{margin-top:18px}</style>
-</head>
-<body>
-<main class="wrap soon">
-  <div style="font-size:3rem">🧺</div>
-  <h1>QuiFait arrive bientôt</h1>
-  <p>L'appli qui répartit les tâches de la maison équitablement selon les horaires de chacun. Elle sera disponible très prochainement, avec un essai gratuit puis un abonnement Famille à 1 € par mois.</p>
-  <a class="tag" href="../">Retour à Johan Studio</a>
-</main>
-<script>
-// Retire l'ancienne version mise en cache par les premiers visiteurs
-if ("serviceWorker" in navigator) navigator.serviceWorker.getRegistrations().then(function(rs){rs.forEach(function(r){if(new URL(r.scope).pathname==="/coupdemain/")r.unregister();});});
-</script>
-</body>
-</html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>QuiFait</title><meta name="robots" content="noindex">
+<meta http-equiv="refresh" content="0; url=/quifait/">
+<link rel="canonical" href="https://johanstudio.fr/quifait/">
+<script>location.replace("/quifait/" + location.search + location.hash);</script>
+</head><body><p>QuiFait a déménagé : <a href="/quifait/">continuer</a>.</p></body></html>
