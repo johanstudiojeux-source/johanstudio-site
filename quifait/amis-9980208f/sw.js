@@ -52,3 +52,33 @@ self.addEventListener("fetch", (event) => {
       .catch(() => caches.match(req.mode === "navigate" ? BASE : req).then((r) => r || caches.match(BASE)))
   );
 });
+
+// Rappels (Web Push) : le serveur envoie { title, body, tag, url }
+self.addEventListener("push", (event) => {
+  let msg = {};
+  try {
+    msg = event.data ? event.data.json() : {};
+  } catch (e) {
+    msg = { body: event.data && event.data.text() };
+  }
+  event.waitUntil(
+    self.registration.showNotification(msg.title || "QuiFait", {
+      body: msg.body || "",
+      tag: msg.tag || "quifait",
+      icon: BASE + "icon.svg",
+      badge: BASE + "icon.svg",
+      data: { url: msg.url || BASE },
+    })
+  );
+});
+
+self.addEventListener("notificationclick", (event) => {
+  event.notification.close();
+  const url = (event.notification.data && event.notification.data.url) || BASE;
+  event.waitUntil(
+    self.clients.matchAll({ type: "window", includeUncontrolled: true }).then((list) => {
+      const open = list.find((c) => new URL(c.url).pathname.startsWith(BASE));
+      return open ? open.focus() : self.clients.openWindow(url);
+    })
+  );
+});
