@@ -65,8 +65,8 @@ self.addEventListener("push", (event) => {
     self.registration.showNotification(msg.title || "HebdoFamille", {
       body: msg.body || "",
       tag: msg.tag || "hebdofamille",
-      icon: BASE + "icon.svg",
-      badge: BASE + "icon.svg",
+      icon: BASE + "icon-192.png",
+      badge: BASE + "badge-96.png",
       data: { url: msg.url || BASE },
     })
   );
